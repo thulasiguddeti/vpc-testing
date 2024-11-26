@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "daws76s-remote-state"
-    key    = "vpc-test"
+    bucket = "daws-tfstate"
+    key    = "vpc-testing"
     region = "us-east-1"
-    dynamodb_table = "daws76s-locking"
+    dynamodb_table = "daws-tflocking"
   }
 }
 
